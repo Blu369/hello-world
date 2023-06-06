@@ -32,5 +32,18 @@ namespace AdminJobServiceRequest.Controllers
         {
             return View();
         }
+        public IActionResult ManagerScreenServiceDesk()
+        {
+            return View();
+        }
+
+        public IActionResult AdminPanel()
+        {
+            return View();
+        }
+        public IActionResult CreateUser()
+        {
+            return View();
+        }
     }
 }
