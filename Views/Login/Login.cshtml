@@ -1,0 +1,50 @@
+﻿@model AdminJobServiceRequest.Models.UserModel;
+
+@{
+    ViewData["Title"] = "Login Page";
+    Layout = null;
+}
+
+<!--<form asp-action="Login" method="post">
+    <div class="login-field">
+        <input asp-for="Email" placeholder="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div class="login-field">
+        <input asp-for="Password" type="password" placeholder="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <button type="submit">Login</button>
+</form>
+-->
+
+<head>
+    <link href="~/css/Login.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div class="banner-card">
+                <img src="~/images/bg.png" height="570" width="540" />
+                <div class="banner-text">
+                    <h1 id="lorem"><p style="font-size: 20px">
+                        Matimco is Wood,<br>
+                            Wood is Matimco.
+                        </p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+            <div class="banner">
+                <center><img src="~/images/logo.png" /></center>
+            </div>
+            <h1 id="login"><b>Welcome Back!</b></h1><br>
+            <input type="email" id="email" class="client-info">
+            <label for="email">Email</label>
+            <input type="password" id="password" class="client-info">
+            <label for="password">Password</label>
+            <input type="submit" id="submit" class="client-info" value="Login">
+        </div>
+    </div>
+</body>
